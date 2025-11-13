@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+}

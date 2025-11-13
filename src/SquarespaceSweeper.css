@@ -1,0 +1,395 @@
+.container {
+  min-height: 100vh;
+  width: 100%; 
+  padding: 2rem;
+}
+
+.wrapper {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.uploadSection {
+  margin-bottom: 1.5rem;
+}
+
+.uploadLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.uploadLabel:hover {
+  border-color: #6366f1;
+}
+
+.uploadLabel.dragging {
+  border-color: #4f46e5;
+  background-color: #eef2ff;
+}
+
+.uploadContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 0 1.5rem 0;
+}
+
+.uploadIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: #9ca3af;
+}
+
+.uploadText {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.uploadSubtext {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.uploadTextBold {
+  font-weight: 600;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileName {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #059669;
+  display: flex;
+  align-items: center;
+}
+
+.fileIcon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.errorMessage {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.errorIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #ef4444;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.errorText {
+  font-size: 0.875rem;
+  color: #b91c1c;
+}
+
+.processButton {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.processButton:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+.processButton:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resultsTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.statCard {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.statTitle {
+  font-weight: 600;
+  color: #374151;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.statNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.downloadSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.downloadAllButton {
+  width: 100%;
+  background-color: #059669;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadAllButton:hover {
+  background-color: #047857;
+}
+
+.downloadIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.downloadGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.downloadButton {
+  background-color: #eef2ff;
+  color: #4338ca;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.downloadButton:hover {
+  background-color: #e0e7ff;
+}
+
+.infoBox {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.5rem;
+}
+
+.infoTitle {
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.infoList {
+  font-size: 0.875rem;
+  color: #1e40af;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.infoListItem strong {
+  font-weight: 600;
+}
+
+.mergedDownloadButton {
+  width: 100%;
+  background-color: #9333ea;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mergedDownloadButton:hover {
+  background-color: #7e22ce;
+}
+
+.refundWarning {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.refundWarningText {
+  font-size: 0.875rem;
+  color: #92400e;
+  font-weight: 500;
+  margin: 0;
+}
+
+.refundedLabel {
+  font-size: 0.75rem;
+  color: #dc2626;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.tableContainer {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tableTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.previewTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.previewTable thead {
+  background-color: #f9fafb;
+}
+
+.previewTable th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.previewTable td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+.previewTable tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.refundedRow {
+  background-color: #fef2f2 !important;
+  border-left: 3px solid #ef4444;
+}
+
+.refundedRow:hover {
+  background-color: #fee2e2 !important;
+}
+
+.refundedStatus {
+  color: #dc2626;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  background-color: #fee2e2;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.paidStatus {
+  color: #059669;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  background-color: #d1fae5;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.refundedCountBadge {
+  font-size: 0.875rem;
+  color: #dc2626;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
