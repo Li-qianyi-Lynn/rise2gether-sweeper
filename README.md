@@ -1,6 +1,7 @@
 # Squarespace Data Sweeper
 
 A tool for processing and cleaning Squarespace CSV data, automatically categorizing attendees and removing sensitive information.
+Deployed by Vercel: https://rise2gether-sweeper.vercel.app/
 
 ## Features
 
